@@ -9,7 +9,7 @@ import './MatchPage.scss';
 
 export const MatchPage = () => {
   const [iplteams,  setIplTeams] = useState([]);
-  const [teams,setTeams]= useState([]);
+ 
   const { teamName, year } = useParams();
 
   useEffect(() => {
@@ -17,20 +17,19 @@ export const MatchPage = () => {
       try {
         const response = await fetch(`http://localhost:8080/ipl/teamName/${teamName}/matches/${year}`);
         const data = await response.json();
-        console.log(data);
+        console.log(data); // if this is null we have to display that the team data has not been found for the given year 
         setIplTeams(data);
 
-        const response2 = await fetch('http://localhost:8080/iplteams/teamName/all');
-        const data2 = await response2.json();
-        console.log(data2)
-        setTeams(data2);
+        
+        
+       
       } catch (error) {
         console.error('Error fetching data', error);
       }
     };
     fetchDetails();
   }, [teamName, year]);
-
+ 
   
   return (
     <div className="MatchPage">
@@ -43,10 +42,15 @@ export const MatchPage = () => {
       </div>
 
       <div className='matchDetails'>
-          
-          {iplteams.map((match) => (
+      {iplteams.length > 0 ? (
+          iplteams.map((match) => (
             <MatchYearCard teamName={teamName} match={match} key={match.matchId} />
-          ))}
+          ))
+        ) : (
+          <div className='centered-message'>
+            <p>Team data not found.</p>
+          </div>
+        )}
       </div>
     </div>
   );
