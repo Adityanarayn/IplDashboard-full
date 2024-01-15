@@ -1,0 +1,42 @@
+.TeamPage{
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap:10px;
+
+    .latestMatches-heading{
+        margin-bottom: 10px;
+    }
+
+    .TeamName-section{
+        grid-column: span 3;
+        justify-self: start;
+        align-self: center;
+
+        .teamName{
+            font-size: 4rem;
+        }
+    }
+    
+    .WinVsLoss{
+        grid-column: span 1;
+        justify-self: start;
+        align-self: center;
+    }
+    .MatchDetails{
+        grid-column: span 4;
+    }
+    .MatchSmallDetails{
+        grid-column: span 3;
+    }
+    .more-button{
+        // margin-left: 20px;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        height: 200px;
+        font-size: larger;
+    }
+}

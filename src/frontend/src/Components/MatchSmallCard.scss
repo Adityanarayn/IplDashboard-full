@@ -1,0 +1,23 @@
+.MatchSmallCard{
+    height:200px;
+    padding: 20px;
+
+    li{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    h4{
+        font-size: 1.5rem;
+    }
+}
+
+
+.won-card{
+    background-color: #C6A969;
+
+}
+
+.loss-card{
+    background-color: red;
+}

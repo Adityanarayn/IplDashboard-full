@@ -1,0 +1,48 @@
+.MatchDetailCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    margin-bottom: 20px;
+    padding: 30px;
+
+
+    .secondary-details{
+        p{
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        text-align: right;
+    }
+    .primary-details{
+        text-align: left;
+        
+    }
+
+    .vs{
+        font-style: italic;
+        padding-top: 5px ;
+        margin-top: 5px;
+    }
+    .other-teamName{
+        font-size: 3rem;
+    }
+
+    .date-section{
+        margin-top: 5px;
+        margin-bottom: 5px ;
+    }
+
+    .list-items{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+.won-card{
+    background-color: #C6A969;
+    border-radius: 1%;
+}
+.loss-card{
+    background-color: #ff0000;
+    border-radius: 1%;
+}

@@ -1,0 +1,28 @@
+
+.MatchPage{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+        
+    h1{
+        display: grid;
+        grid-column: span 2;
+        justify-content: center;
+        margin-bottom:10px;
+    }
+    .Mini-Heading{
+        display: flex;
+        justify-content: center;
+        grid-column: span 2;
+        margin-bottom:10px;
+    }
+    .dateDetails{
+        
+        
+        display: grid;
+        
+        text-align: left;
+        padding: 20px;
+        
+    }
+    
+}

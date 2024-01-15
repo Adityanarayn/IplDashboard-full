@@ -1,0 +1,33 @@
+
+
+
+
+
+.MatchYearCard{
+    background-color: red;
+    margin-top: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+    .MatchDate{
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        padding-top: 50px;
+        
+    }
+}
+
+.won-card{
+    background-color: #C6A969;
+}
+
+.loss-card{
+    background-color: red
+}
+
+
+//Create a style where the name can be drop down as well as the date could
+// be a drop down as well 
