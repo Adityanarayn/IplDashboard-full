@@ -15,7 +15,7 @@ export const MatchPage = () => {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
-        const response = await fetch(`http://localhost:8080/ipl/teamName/${teamName}/matches/${year}`);
+        const response = await fetch(`${process.env.REACT_APP_ROOT_URL}/ipl/teamName/${teamName}/matches/${year}`);
         const data = await response.json();
         console.log(data); // if this is null we have to display that the team data has not been found for the given year 
         setIplTeams(data);
@@ -44,7 +44,7 @@ export const MatchPage = () => {
       <div className='matchDetails'>
       {iplteams.length > 0 ? (
           iplteams.map((match) => (
-            <MatchYearCard teamName={teamName} match={match} key={match.matchId} />
+            <MatchYearCard teamName={teamName} match={match} key={match.id} />
           ))
         ) : (
           <div className='centered-message'>

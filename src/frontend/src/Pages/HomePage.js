@@ -1,5 +1,5 @@
 import {React, useEffect, useState} from 'react';
-import{ useParams } from 'react-router-dom';
+
 import { TeamDetailCard } from '../Components/TeamDetailCard'
 import './HomePage.scss'
 
@@ -13,7 +13,7 @@ export const HomePage = () => {
     () => {
         const fetchDetails = async () => {
             try {
-                const response= await fetch(`http://localhost:8080/iplteams/test`);
+                const response= await fetch(`${process.env.REACT_APP_ROOT_URL}/iplteams/test`);
                 const data= await response.json();
                 setTeams(data);
                 console.log(data);
@@ -42,7 +42,7 @@ export const HomePage = () => {
           
                   <div className='teamNames'>
                     {
-                    team.map(match => <TeamDetailCard teamName={match.name} match={match}/>)
+                    team.map(match => <TeamDetailCard key={match.id} teamName={match.name} />)
                     }
                   </div>
         </div>

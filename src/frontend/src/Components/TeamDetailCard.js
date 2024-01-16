@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import './TeamDetailCard.scss';
 
 
-export const TeamDetailCard = ({teamName,match}) => {
+export const TeamDetailCard = ({teamName}) => {
     if (!teamName) return null;
     
     const teamRoute=`/iplteams/team/${teamName}`;
