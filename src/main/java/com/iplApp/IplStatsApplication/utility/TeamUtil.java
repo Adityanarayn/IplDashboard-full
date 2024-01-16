@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class TeamUtil {
     TeamRepo teamRepo;
     @Autowired
-            TeamUtil(TeamRepo teamRepo){
+    TeamUtil(TeamRepo teamRepo){
         this.teamRepo=teamRepo;
 
     }
