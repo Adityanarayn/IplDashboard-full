@@ -1,6 +1,5 @@
 package com.iplApp.IplStatsApplication.utility;
 
-import com.iplApp.IplStatsApplication.model.Players;
 import com.iplApp.IplStatsApplication.repository.PlayerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

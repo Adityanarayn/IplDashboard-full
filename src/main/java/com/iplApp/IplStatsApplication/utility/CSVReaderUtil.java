@@ -3,7 +3,7 @@ package com.iplApp.IplStatsApplication.utility;
 import com.iplApp.IplStatsApplication.model.IplModel;
 import com.iplApp.IplStatsApplication.model.VenueDetails;
 import com.iplApp.IplStatsApplication.repository.IplRepo;
-import com.iplApp.IplStatsApplication.repository.PlayerRepo;
+
 import com.opencsv.CSVReader;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
