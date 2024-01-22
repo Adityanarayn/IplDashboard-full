@@ -1,5 +1,9 @@
 package com.iplApp.IplStatsApplication.utility;
 
+<<<<<<< HEAD
+=======
+import com.iplApp.IplStatsApplication.model.Players;
+>>>>>>> 8052f41 (Optimised it for upload on aws)
 import com.iplApp.IplStatsApplication.repository.PlayerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

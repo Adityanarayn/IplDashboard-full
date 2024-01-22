@@ -19,7 +19,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 
 @RestController
+<<<<<<< HEAD
 @CrossOrigin  // can be used to specify the origin request url
+=======
+@CrossOrigin(origins = "*") // can be used to specify the origin request url
+>>>>>>> 8052f41 (Optimised it for upload on aws)
 @RequestMapping("/iplteams")
 public class TeamController {
   private TeamRepo teamRepo;

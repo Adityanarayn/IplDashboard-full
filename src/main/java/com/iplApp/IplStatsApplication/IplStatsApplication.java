@@ -43,7 +43,11 @@ public class IplStatsApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		log.info("Checking the Database");
+<<<<<<< HEAD
 		String filePath2="/Users/adityanarayan/Documents/IplStatsApplication/src/main/java/com/iplApp/IplStatsApplication/utility/IPL_data.csv";
+=======
+		String filePath2="src/main/java/com/iplApp/IplStatsApplication/IPL_data.csv";
+>>>>>>> 8052f41 (Optimised it for upload on aws)
 
 		if (!databaseInitialisation.databaseExists()) {  // if the database does not exist which means its empty
 			try {

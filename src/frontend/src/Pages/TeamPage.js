@@ -17,7 +17,11 @@ export const TeamPage = () => {
   useEffect(() => {
     const fetchDetails = async () => {
       try {
+<<<<<<< HEAD
         const response = await fetch(`${process.env.REACT_APP_ROOT_URL}/iplteams/team/${teamName}`);
+=======
+        const response = await fetch(`${process.env.REACT_APP_DATA_ROOT_URL}/iplteams/team/${teamName}`);
+>>>>>>> 8052f41 (Optimised it for upload on aws)
         const data = await response.json();
         console.log(data);
         setTeam(data);
@@ -49,10 +53,17 @@ export const TeamPage = () => {
       </div>
       <div className="MatchDetails">
         <h2 className="latestMatches-heading">Latest Matches</h2>
+<<<<<<< HEAD
         <MatchDetailCard key={team.id} teamName={team.name} match={team.latestMatches[0]} />
       </div>
       {team.latestMatches.slice(1).map((match) => (
         <MatchSmallCard key={match.id} teamName={team.name} match={match} />
+=======
+        <MatchDetailCard teamName={team.name} match={team.latestMatches[0]} />
+      </div>
+      {team.latestMatches.slice(1).map((match) => (
+        <MatchSmallCard teamName={team.name} match={match} />
+>>>>>>> 8052f41 (Optimised it for upload on aws)
       ))}
       <div className="more-button">
         <Link to={'/'}>More -></Link>

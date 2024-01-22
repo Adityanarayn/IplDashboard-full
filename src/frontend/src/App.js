@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+=======
+import { HashRouter as Router, Routes, Route} from 'react-router-dom';
+>>>>>>> 8052f41 (Optimised it for upload on aws)
 import './App.css';
 import { TeamPage } from './Pages/TeamPage';
 import {MatchPage } from './Pages/MatchPage';

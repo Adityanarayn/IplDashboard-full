@@ -8,7 +8,11 @@ import org.springframework.stereotype.Component;
 public class TeamUtil {
     TeamRepo teamRepo;
     @Autowired
+<<<<<<< HEAD
     TeamUtil(TeamRepo teamRepo){
+=======
+            TeamUtil(TeamRepo teamRepo){
+>>>>>>> 8052f41 (Optimised it for upload on aws)
         this.teamRepo=teamRepo;
 
     }

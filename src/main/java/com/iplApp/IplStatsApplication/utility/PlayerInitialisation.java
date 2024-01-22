@@ -7,7 +7,12 @@ import com.iplApp.IplStatsApplication.repository.PlayerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+<<<<<<< HEAD
 
+=======
+import java.util.ArrayList;
+import java.util.Arrays;
+>>>>>>> 8052f41 (Optimised it for upload on aws)
 import java.util.Collections;
 import java.util.List;
 
@@ -48,7 +53,13 @@ public class PlayerInitialisation {
                 Players players= new Players();
                 players.setName(player);
 //                players.setTeamName(teamName);
+<<<<<<< HEAD
                 players.setTeamName(List.of(teamName));
+=======
+                List<String> teamNames= new ArrayList<>();
+                teamNames.add(teamName);
+                players.setTeamName(teamNames);
+>>>>>>> 8052f41 (Optimised it for upload on aws)
                 players.setNumberOfMatches(1); // this will set the number of matches to 1 for the first entry of the player in the table
                 playerRepo.save(players);
 

@@ -11,7 +11,11 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+<<<<<<< HEAD
 @CrossOrigin
+=======
+@CrossOrigin(origins = "*")
+>>>>>>> 8052f41 (Optimised it for upload on aws)
 @RequestMapping("/ipl")
 public class IplController {
 
